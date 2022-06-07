@@ -2,9 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
      <ul >
-       <li v-for="item in users" :key="item.id">
+       <li v-for="(item) in users" :key="item.id">
            {{item.name}}
-
        </li>
      </ul>
   </div>
@@ -22,8 +21,8 @@ export default {
     }
   },
   mounted() {
-    const api="http://localhost:3001/api/users"
-    axios.get(api).then(res=>{
+    axios.get('http://localhost:3001/api/users').then(res=>{
+      console.log(res)
       this.users=res.data
     })
   },
