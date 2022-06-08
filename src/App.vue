@@ -22,8 +22,8 @@ export default {
     }
   },
   mounted() {
-  
-    axios.get('http://106.14.181.6/:3001/api/users').then(res=>{
+    const api="http://106.14.181.6:3001/api/users"
+    axios.get(api).then(res=>{
       console.log(res)
       this.users=res.data
     })
