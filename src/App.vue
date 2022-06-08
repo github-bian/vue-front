@@ -4,7 +4,7 @@
     <p>服了啊！</p>
      <ul >
        <li v-for="(item) in users" :key="item.id">
-           {{item.name}}
+           {{item.id}}-{{item.name}}
        </li>
      </ul>
   </div>
