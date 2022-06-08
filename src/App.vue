@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
+    <p>服了啊！</p>
      <ul >
        <li v-for="(item) in users" :key="item.id">
            {{item.name}}
